@@ -17,7 +17,7 @@ public class financialCalculators {
 
         switch (ans.toUpperCase()){
             case "M":
-                System.out.println("Mortgage");
+                mortgageCalculator();
               break;
             case "C":
                 System.out.println("CD");
@@ -28,5 +28,9 @@ public class financialCalculators {
             default:
                 System.out.println( "Please enter a proper calculator choice.");
         }
+    }
+
+    public static void mortgageCalculator(){
+        System.out.println("Hello M");
     }
 }
