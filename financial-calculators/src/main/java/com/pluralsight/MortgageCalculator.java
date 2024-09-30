@@ -21,14 +21,18 @@ public class MortgageCalculator {
     }
 
     public static void monthly(double p, double i, double t){
-        double n = 12*t;
-        double r = i/12;
+        double n = t*12;
+        double r = (i/100)/12;
         double top = r*Math.pow((1+r), n);
         double bottom = Math.pow((1+r),n) -1;
         double fract = top / bottom;
-        double monthly = (p*fract)/100;
+        double monthly = (p*fract);
 
         System.out.printf("Your monthly payment is $%.2f", monthly);
+    }
+
+    public static void totalInterest(){
+
     }
 
 
