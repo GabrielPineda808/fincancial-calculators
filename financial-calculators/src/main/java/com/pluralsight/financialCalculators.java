@@ -1,5 +1,6 @@
 package com.pluralsight;
 import java.util.Scanner;
+import static com.pluralsight.MortgageCalculator.mortgageCalculator;
 
 
 public class financialCalculators {
@@ -28,13 +29,5 @@ public class financialCalculators {
             default:
                 System.out.println( "Please enter a proper calculator choice.");
         }
-    }
-
-    public static void mortgageCalculator(){
-        System.out.println("Hello M");
-    }
-    public static double principalMortgage(){
-
-        return 0;
     }
 }
