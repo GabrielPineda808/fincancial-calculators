@@ -7,11 +7,16 @@ public class MortgageCalculator {
 
     }
     public static void mortgageCalculator(){
-        double p = principalMortgage();
+        double p = answer("Please enter the principal amount of your mortgage loan: ");
+        double i = answer("Please enter the interest amount of your mortgage loan: ");
+        double t = answer("Please enter the term length on your mortgage loan in months: ");
     }
-    public static double principalMortgage(){
-        System.out.println("Please enter the principal amount of your mortgage loan: ");
+
+    public static double answer(String message){
+        System.out.println(message);
         double ans = scanner.nextDouble();
         return ans;
     }
+
+
 }
