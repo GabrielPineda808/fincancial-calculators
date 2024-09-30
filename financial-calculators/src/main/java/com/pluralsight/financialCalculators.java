@@ -33,4 +33,8 @@ public class financialCalculators {
     public static void mortgageCalculator(){
         System.out.println("Hello M");
     }
+    public static double principalMortgage(){
+
+        return 0;
+    }
 }
