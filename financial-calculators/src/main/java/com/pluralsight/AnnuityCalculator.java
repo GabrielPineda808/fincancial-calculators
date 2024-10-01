@@ -8,7 +8,7 @@ public class AnnuityCalculator {
     }
 
     public static void aCalc() {
-        System.out.println("Welcome to the Annuity Order Present Value calculator! Enjoy!:)\n");
+        System.out.println("Welcome to the Ordinary Annuity Present Value calculator! Enjoy!:)\n");
         double payout = answer("Please enter the monthly payout: ");
         double i = answer("\nPlease enter the expected interest rate: ");
         double t = answer("\nPlease enter the years until payout: ");
