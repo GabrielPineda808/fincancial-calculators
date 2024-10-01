@@ -1,12 +1,6 @@
 package com.pluralsight;
 import java.util.Scanner;
 
-
-import static com.pluralsight.AnnuityCalculator.aCalc;
-import static com.pluralsight.CDFV.CDcalc;
-import static com.pluralsight.MortgageCalculator.mortgageCalculator;
-
-
 public class financialCalculators {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
@@ -22,13 +16,13 @@ public class financialCalculators {
 
         switch (ans.toUpperCase()){
             case "M":
-                mortgageCalculator();
+                MortgageCalculator.mortgageCalculator();
               break;
             case "C":
-                CDcalc();
+                CDFV.CDcalc();
                 break;
             case "A":
-                aCalc();
+                AnnuityCalculator.aCalc();
                 break;
             default:
                 System.out.println( "Please enter a proper calculator choice.\n");
