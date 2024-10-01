@@ -1,5 +1,9 @@
 package com.pluralsight;
 import java.util.Scanner;
+
+
+import static com.pluralsight.AnnuityCalculator.aCalc;
+import static com.pluralsight.CDFV.CDcalc;
 import static com.pluralsight.MortgageCalculator.mortgageCalculator;
 
 
@@ -13,7 +17,7 @@ public class financialCalculators {
         "Your calculator options include: \n" +
         "( M ) Mortgage Calculator \n" +
         "( C ) CD Maturity Value \n" +
-        "( A ) Ordinary Annuity Present Value");
+        "( A ) Ordinary Annuity Present Value\n");
         String ans = scanner.nextLine();
 
         switch (ans.toUpperCase()){
@@ -21,13 +25,13 @@ public class financialCalculators {
                 mortgageCalculator();
               break;
             case "C":
-                System.out.println("CD");
+                CDcalc();
                 break;
             case "A":
-                System.out.println("Annuity");
+                aCalc();
                 break;
             default:
-                System.out.println( "Please enter a proper calculator choice.");
+                System.out.println( "Please enter a proper calculator choice.\n");
         }
     }
 }
