@@ -18,7 +18,7 @@ public class CDFV {
     }
 
     public static void value(double p, double i, double t){
-        double n = 12;
+        double n = 365;
         double r = i/100;
         double fv = p*(Math.pow((1+(r/n)),(n*t)));
         double intMade = fv - p;

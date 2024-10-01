@@ -13,3 +13,14 @@ Below are a few examples of how the app functions along with some of my favorite
 
 I hope you enjoy the app as much as I did.
 
+Client Home page:
+
+
+Mortage Calculator example:
+
+CD Future Value example
+
+Ordinary Annuity Present Value example:
+
+
+
